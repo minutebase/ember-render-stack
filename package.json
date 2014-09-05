@@ -1,6 +1,7 @@
 {
   "name": "ember-render-stack",
-  "version": "0.0.0",
+  "description": "Render a stack to outlets",
+  "version": "0.0.1",
   "directories": {
     "doc": "doc",
     "test": "test"
@@ -10,7 +11,7 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/minutebase/ember-render-stack",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -20,7 +21,10 @@
   "ember-addon": {
     "configPath": "tests/dummy/config"
   },
-  "author": "",
+  "author": {
+    "name": "Richard Livsey",
+    "email": "richard@minutebase.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "body-parser": "^1.2.0",

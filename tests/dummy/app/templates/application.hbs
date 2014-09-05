@@ -1,3 +1,16 @@
 <h2 id='title'>Welcome to Ember.js</h2>
 
-{{outlet}}
+
+<nav class="main">
+  {{link-to "one" "one"}}     &rarr;
+  {{link-to "two" "two"}}     &rarr;
+  {{link-to "three" "three"}}
+</nav>
+
+<nav class="contextual">
+  {{outlet "navigation"}}
+</nav>
+
+<div>
+  {{outlet}}
+</div>
