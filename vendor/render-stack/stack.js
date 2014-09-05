@@ -31,5 +31,13 @@ export default Ember.Object.extend({
 
   stackFor: function(name) {
     return this.stacks[name] || (this.stacks[name] = []);
+  },
+
+  disconnectParams: function(name) {
+    var parts = name.split(":");
+    return {
+      parentView: parts[0],
+      outlet: parts[1]
+    }
   }
 });

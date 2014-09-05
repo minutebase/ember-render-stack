@@ -1,7 +1,7 @@
 {
   "name": "ember-render-stack",
   "description": "Render a stack to outlets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "directories": {
     "doc": "doc",
     "test": "test"

@@ -6,13 +6,12 @@ export default Ember.Mixin.create({
       var stack = this.container.lookup("stack:main");
       var _this = this;
       var item;
-
       stack.names().forEach(function(name) {
         item = stack.top(name);
         if (item) {
           _this.render(item.template, item.options);
         } else {
-          _this.disconnectOutlet({outlet: item.options.outlet, parentView: item.options.into});
+          _this.disconnectOutlet(stack.disconnectParams(name));
         }
       });
     }

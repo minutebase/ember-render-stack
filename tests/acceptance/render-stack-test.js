@@ -53,3 +53,16 @@ test("pages deeper within the stack show the deepest item", function() {
     navContains('Navigation for "three"');
   });
 });
+
+test("pages outside the stack clear the outlet", function() {
+  visit("/one");
+
+  andThen(function() {
+    visit("/");
+  });
+
+  andThen(function() {
+    console.log("here");
+    navContains('');
+  });
+});
