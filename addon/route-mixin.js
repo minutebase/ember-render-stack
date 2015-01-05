@@ -9,7 +9,7 @@ export default Ember.Mixin.create({
   // https://github.com/emberjs/ember.js/issues/4923
 
   activate: function() {
-    this.setupStack()
+    this.setupStack();
   },
 
   deactivate: function() {

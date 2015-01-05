@@ -1,7 +1,7 @@
 import Ember from 'ember';
-import StackRoute from 'vendor/render-stack/route-mixin';
+import { StackRouteMixin } from 'ember-render-stack';
 
-export default Ember.Route.extend(StackRoute, {
+export default Ember.Route.extend(StackRouteMixin, {
 
   renderStack: function() {
     this.renderToStack('nav/one', {

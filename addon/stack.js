@@ -38,6 +38,6 @@ export default Ember.Object.extend({
     return {
       parentView: parts[0],
       outlet: parts[1]
-    }
+    };
   }
 });

@@ -36,7 +36,7 @@ First mixin the `RenderMixin` to your `ApplicationRoute`:
 
 ```javascript
 import Ember from 'ember';
-import StackRenderMixin from 'vendor/render-stack/render-mixin';
+import { StackRenderMixin } from 'ember-render-stack';
 
 export default Ember.Route.extend(StackRenderMixin);
 ```
@@ -57,7 +57,7 @@ Finally, mixin the `RouteMixin` to each route you want to render into the stack 
 
 ```javascript
 import Ember from 'ember';
-import StackRouteMixin from 'vendor/render-stack/route-mixin';
+import { StackRouteMixin } from 'ember-render-stack';
 
 export default Ember.Route.extend(StackRouteMixin, {
   renderStack: function() {

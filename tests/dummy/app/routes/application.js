@@ -1,6 +1,6 @@
 import Ember from 'ember';
-import RenderStack from 'vendor/render-stack/render-mixin';
+import { StackRenderMixin } from 'ember-render-stack';
 
-export default Ember.Route.extend(RenderStack, {
+export default Ember.Route.extend(StackRenderMixin, {
 
 });

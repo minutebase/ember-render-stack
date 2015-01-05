@@ -1,4 +1,4 @@
-import Stack from 'vendor/render-stack/stack';
+import { Stack } from 'ember-render-stack';
 
 export default {
   name: 'render-stack',
